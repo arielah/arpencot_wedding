@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ariel &amp; Vai</title>
+  <meta name="description" content="A static wedding website for Ariel and Vai." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#welcome" data-route-link="welcome">Welcome</a>
+      <a href="#story" data-route-link="story">Our Story</a>
+      <a href="#schedule" data-route-link="schedule">Schedule</a>
+      <a href="#stay" data-route-link="stay">Where to Stay</a>
+      <a href="#dress" data-route-link="dress">Dress Code</a>
+      <a href="#qa" data-route-link="qa">Q&amp;A</a>
+      <a href="#travel" data-route-link="travel">Travel</a>
+      <a href="#gallery" data-route-link="gallery">Gallery</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="route welcome-route is-active" id="welcome" aria-labelledby="welcome-title" data-route="welcome">
+      <div class="hero" role="img" aria-label="Monet garden painting background">
+        <div class="hero-inner">
+          <h1 id="welcome-title">Ariel &amp; Vai</h1>
+        </div>
+      </div>
+      <section class="event-panel" aria-label="Wedding details">
+        <div class="event-details welcome-details">
+          <p class="eyebrow">Two celebrations, one love story</p>
+          <figure class="welcome-figure">
+            <img src="assets/welcome_image.jpg" alt="Ariel and Vai together" />
+          </figure>
+          <p class="welcome-copy">We’re getting married twice: first in Bangalore, then in Philadelphia. We’re so grateful to celebrate in both places that shaped us, and we can’t wait to welcome our favorite people in each city.</p>
+          <div class="event-grid" aria-label="Wedding dates and locations">
+            <article class="event-card">
+              <p class="event-label">India Wedding</p>
+              <p class="date">Sunday, January 24, 2027</p>
+              <p class="place">Bangalore, India</p>
+            </article>
+            <article class="event-card">
+              <p class="event-label">U.S. Wedding</p>
+              <p class="date">Friday, April 30, 2027</p>
+              <p class="place">Philadelphia, Pennsylvania</p>
+            </article>
+          </div>
+          <div class="button-row welcome-actions">
+            <a class="button" href="#story" data-route-link="story">Read our story</a>
+            <a class="button button-outline" href="#travel" data-route-link="travel">Travel info</a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="route subpage" id="story" aria-labelledby="story-title" data-route="story">
+      <div class="page-banner" aria-hidden="true"></div>
+      <article class="content-panel story-panel">
+        <h2 id="story-title">Our Story</h2>
+        <div class="story-layout">
+          <div class="story-block">
+            <div class="story-copy">
+              <p>Our love story didn’t start when we were born on opposite sides of the USA—Vai in California, Ariel in Maryland—exactly three days apart. It didn’t start when we grew up on opposite sides of the world, Vai in Bangalore and Ariel in Denver. It didn’t even start when we both moved to Philadelphia in the summer of 2018 to pursue graduate studies at UPenn and lived half a block away from each other. It took until May 2023 and a match on Hinge to get our love story started. Our first date was a comedy of errors; we didn’t realize there would be a two-hour wait at the bowling alley, so we decided to catch a movie Vai had heard was good. Turns out a horror film about paranoid schizophrenia isn’t great first date material! We quickly bailed and ended up spending hours walking all over the city and talking about everything. By the end of the first date, we were both smitten.</p>
+            </div>
+            <div class="story-media story-media-bottom-focus">
+              <img src="assets/story_photo_1.jpg" alt="Ariel and Vai together outdoors" />
+            </div>
+          </div>
+          <div class="story-block story-block-reverse">
+            <div class="story-media">
+              <img src="assets/story_photo_2.jpg" alt="Ariel and Vai smiling together" />
+            </div>
+            <div class="story-copy">
+              <p>We quickly started building a life together; Vai got into board games and Ariel got into capital-f Films. Together we’ve explored foreign countries, film festivals, glacier hikes, and even an Improv 101 class. In November of 2025, Vai constructed an elaborate scavenger hunt that ended up driving us to Hawk Mountain, Pennsylvania where he asked Ariel to marry him. She said a resounding yes and posed the same question to him a few weeks later at Morris Arboretum. We feel so lucky to get to spend the rest of our lives together, and can’t wait to celebrate with you!</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="route subpage" id="schedule" aria-labelledby="schedule-title" data-route="schedule">
+      <div class="page-banner" aria-hidden="true"></div>
+      <article class="content-panel narrow-panel">
+        <h2 id="schedule-title">Schedule</h2>
+        <p class="section-intro">We’ll celebrate in Bangalore first, then again in Philadelphia. Full event-by-event schedules for each weekend are still to come.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <time>Jan 24</time>
+            <div>
+              <h3>Bangalore Wedding</h3>
+              <p>Our India celebration takes place in Bangalore on Sunday, January 24, 2027.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <time>Apr 30</time>
+            <div>
+              <h3>Philadelphia Wedding</h3>
+              <p>Our U.S. celebration takes place in Philadelphia on Friday, April 30, 2027.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="route subpage" id="stay" aria-labelledby="stay-title" data-route="stay">
+      <div class="page-banner" aria-hidden="true"></div>
+      <article class="content-panel narrow-panel">
+        <h2 id="stay-title">Where to Stay</h2>
+        <div class="rich-copy stay-copy">
+          <h3>Where should I stay?</h3>
+          <p>TBD</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="route subpage" id="dress" aria-labelledby="dress-title" data-route="dress">
+      <div class="page-banner" aria-hidden="true"></div>
+      <article class="content-panel card-panel dress-panel">
+        <h2 id="dress-title">Dress Code</h2>
+        <p class="section-intro">Indian weddings are a great chance to dazzle with color and sparkle! If it's your first time attending an Indian wedding, here's what we recommend:</p>
+        <div class="dress-sections">
+          <section class="dress-section" aria-labelledby="dress-women-title">
+            <div class="dress-copy rich-copy">
+              <h3 id="dress-women-title">Women</h3>
+              <p>Women have lots of options for wedding guest outfits in India. Most traditional in south India is a sari, a long piece of fabric tied to form a skirt and then draped over the shoulder, with a matching blouse. These can be a little intimidating to wear for the first time as a westerner! If you love this look, probably buy a "pre-draped" or "ready to wear" sari that comes stitched into skirt shape.</p>
+              <p>Another great option is a churidar, consisting of a long tunic and trousers. These will typically come with a dupatta, a piece of fabric that's pinned to the shoulder.</p>
+              <p>Other options from other parts of India are a lehenga (a long, wide skirt with blouse) or an anarkali (a long dress, usually with long sleeves).</p>
+              <p>Shoes are typically dressy sandals; because our events are being held outdoors on uneven ground, please emphasize comfort and mobility!</p>
+              <p>There's no concept of "don't outshine the bride" in Indian weddings; bright colors, patterns, jewelry jewelry and more jewelry is encouraged! Red is the traditional bridal color and most people will avoid it, but it's not a hard rule like no wearing white to a western wedding would be.</p>
+            </div>
+            <div class="dress-gallery dress-gallery-two-up">
+              <figure class="dress-figure-sari">
+                <img src="assets/dresses/saree.jpg" alt="Example sari outfit for wedding guests" />
+                <figcaption>Sari</figcaption>
+              </figure>
+              <figure class="dress-figure-churidar">
+                <img src="assets/dresses/womens_churidar.jpg" alt="Example churidar outfit for wedding guests" />
+                <figcaption>Churidar</figcaption>
+              </figure>
+            </div>
+          </section>
+          <section class="dress-section dress-section-reverse" aria-labelledby="dress-men-title">
+            <div class="dress-gallery">
+              <figure>
+                <img src="assets/dresses/kurtha.jpg" alt="Example kurta outfit for wedding guests" />
+                <figcaption>Kurta</figcaption>
+              </figure>
+            </div>
+            <div class="dress-copy rich-copy">
+              <h3 id="dress-men-title">Men</h3>
+              <p>The traditional wedding guest outfit for men in southern India is called a kurta: a knee-length tunic and close-fitted trousers. This can also come with a jacket, a vest, or a chunni that's pinned on the shoulder. Lots of Indian men will also wear a western-style suit to weddings.</p>
+              <p>Shoes are often dressy sandals, but as with the women, emphasize comfort and mobility.</p>
+            </div>
+          </section>
+        </div>
+      </article>
+    </section>
+
+    <section class="route subpage" id="qa" aria-labelledby="qa-title" data-route="qa">
+      <div class="page-banner" aria-hidden="true"></div>
+      <article class="content-panel narrow-panel">
+        <h2 id="qa-title">Q&amp;A</h2>
+        <div class="accordion">
+          <button class="accordion-trigger" type="button">Can I bring a plus one?</button>
+          <div class="accordion-panel">Your invitation will list everyone included in your party.</div>
+          <button class="accordion-trigger" type="button">Are children invited?</button>
+          <div class="accordion-panel">We love your little ones, but the wedding will be an adults-only celebration unless children are named on the invitation.</div>
+          <button class="accordion-trigger" type="button">Will transportation be provided?</button>
+          <div class="accordion-panel">Transportation details will be posted here as we get closer to the date.</div>
+        </div>
+      </article>
+    </section>
+
+    <section class="route subpage" id="travel" aria-labelledby="travel-title" data-route="travel">
+      <div class="page-banner" aria-hidden="true"></div>
+      <article class="content-panel narrow-panel">
+        <h2 id="travel-title">Travel</h2>
+        <div class="rich-copy travel-copy">
+          <h3>What airport should I fly to?</h3>
+          <p>You should plan to fly to Kempegowda International Airport (BLR) in Bangalore. From the U.S., the most common layover stops are Singapore from the west coast and London and Frankfurt from the east coast. Dubai and Doha are usually good stopovers too, but based on our experience in March 2026, we recommend holding off from flying through there for a little while...</p>
+          <h3>Do I need a visa if I'm coming from the U.S.?</h3>
+          <p>Yes! An e-Tourist visa is easy and quick to get. Go to <a href="https://indianvisaonline.gov.in/evisa/">https://indianvisaonline.gov.in/evisa/</a> and follow the directions there. You should get an email that your application is approved within a few days. That email will give you a link to a PDF with your details and photo, which is your e-visa. Print it out and store it with your passport; you'll need to present both at the airport in the U.S. and in India.</p>
+          <h3>How should I get around?</h3>
+          <p>First off, do NOT rent your own car. We cannot recommend driving in cities in India unless you're coming with years of experience driving in cities in India. Seriously.</p>
+          <p>Our recommendations are:</p>
+          <p>- Uber: hugely common in India and quite inexpensive compared to the U.S.!</p>
+          <p>- &lt;car rental company I forgot the name of&gt; If you have a packed day of sightseeing around town, you can also hire a car for the day for approximately $30USD. Be sure to request an English-speaking driver on the website; then whenever you're done at one spot, you can call him on WhatsApp and he'll pick you up and take you wherever's next.</p>
+          <p>- Metro: the above-ground rail system is a safe and convenient option for getting from one part of the city to another, but it's still being built so the lines are limited. They have security checkpoints and metal detectors at each rail stop, so get there with a few minutes of buffer before your train!</p>
+          <h3>What should I pack?</h3>
+          <p>Bangalore in February is usually in the 70s and 80s Fahrenheit in January, which should be a welcome respite for us living in North America! Pack accordingly, but note that India is a pretty conservatively-dressed culture. We recommend pants instead of shorts for both men and women. Cleavage is also very taboo.</p>
+          <h3>Anything else you recommend doing in the area?</h3>
+          <p>TBD</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="route subpage" id="gallery" aria-labelledby="gallery-title" data-route="gallery">
+      <div class="page-banner" aria-hidden="true"></div>
+      <article class="content-panel card-panel moments-panel">
+        <h2 id="gallery-title">Gallery</h2>
+        <p class="section-intro">A few favorite snapshots from the adventures that brought us here.</p>
+        <div class="gallery">
+          <figure>
+            <img src="assets/moments/IMG_1868.JPG" alt="Ariel and Vai showing their rings while lying among greenery" />
+            <figcaption>Freshly engaged and showing off the rings.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/moments/IMG_2833.JPG" alt="Ariel and Vai smiling together at a mountain overlook" />
+            <figcaption>One of our favorite summit selfies.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/moments/IMG_0568.JPG" alt="Ariel and Vai on jet skis in front of a glacier" />
+            <figcaption>Jet skiing up to a glacier felt unreal.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/moments/IMG_8925.JPG" alt="Ariel and Vai standing together in the snow with mountains behind them" />
+            <figcaption>Cold hands, clear skies, excellent view.</figcaption>
+          </figure>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
