@@ -9,6 +9,8 @@
   --line: rgba(135, 102, 95, 0.24);
   --shadow: 0 22px 70px rgba(74, 54, 45, 0.20);
   --content-width: 1120px;
+  --hero-height: 124vh;
+  --vines-height: 1448px;
   --font-body: "Lora", Georgia, "Times New Roman", Times, serif;
   --font-heading: "Great Vibes", "Snell Roundhand", "Bickham Script Pro", "Segoe Script", "Brush Script MT", cursive;
   --font-subheading: "Carphe Regular", "Carphe", "Cormorant Garamond", Georgia, "Times New Roman", Times, serif;
@@ -69,20 +71,31 @@ body {
 
 body::before {
   content: "";
-  position: fixed;
-  inset: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--hero-height);
   z-index: -2;
   background: url("assets/monet-garden-web.webp") center 48% / cover no-repeat;
 }
 
 body::after {
   content: "";
-  position: fixed;
-  inset: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--hero-height);
   z-index: -1;
   background:
     linear-gradient(180deg, rgba(57, 46, 34, 0.24) 0%, rgba(57, 46, 34, 0.08) 24%, rgba(57, 46, 34, 0.28) 100%),
     radial-gradient(circle at 20% 20%, rgba(246, 240, 223, 0.12), transparent 30%);
+}
+
+body:not([data-route="welcome"])::before,
+body:not([data-route="welcome"])::after {
+  display: none;
 }
 
 img {
@@ -146,7 +159,7 @@ a {
   text-decoration: none;
   font-family: var(--font-subheading);
   font-weight: 700;
-  font-size: 15px;
+  font-size: clamp(15px, 2.2vw, 30px);
   line-height: 1;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
   opacity: 0.95;
@@ -191,7 +204,7 @@ a {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: var(--hero-height);
   display: grid;
   place-items: center;
   padding: 28px 22px 72px;
@@ -242,9 +255,11 @@ a {
   padding: 0 24px;
   display: grid;
   place-items: stretch center;
-  background:
-    linear-gradient(180deg, rgba(125, 145, 112, 0.66), rgba(151, 171, 135, 0.7)),
-    url("assets/cream-canvas.jpg") top left / 320px auto repeat;
+  background-color: #F6ECE0;
+  background-image: url("assets/vines_background.png");
+  background-position: center top;
+  background-repeat: repeat-x;
+  background-size: auto var(--vines-height);
   color: var(--warm-gray);
 }
 
@@ -267,17 +282,21 @@ a {
 
 .eyebrow {
   margin: 0 0 18px;
-  font-family: var(--font-subheading);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  font-family: var(--font-heading);
+  font-size: clamp(30px, 2.4vw, 52px);
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
 .welcome-copy {
   max-width: 640px;
   margin: 0 auto;
   font-size: 18px;
+  line-height: 1.72;
+}
+
+.welcome-copy + .welcome-copy {
+  margin-top: 24px;
 }
 
 .welcome-figure {
@@ -384,15 +403,17 @@ a {
   position: absolute;
   inset: 128px 0 0;
   z-index: -1;
-  background:
-    linear-gradient(180deg, rgba(125, 145, 112, 0.66), rgba(151, 171, 135, 0.7)),
-    url("assets/cream-canvas.jpg") top left / 320px auto repeat;
+  background-color: #F6ECE0;
+  background-image: url("assets/vines_background.png");
+  background-position: center top;
+  background-repeat: repeat-x;
+  background-size: auto var(--vines-height);
 }
 
 .page-banner {
   position: relative;
   height: 128px;
-  background-position: center 43%;
+  background: url("assets/monet-garden-web.webp") center 48% / cover no-repeat;
 }
 
 .content-panel {
@@ -496,6 +517,8 @@ h3 {
 .dress-sections {
   display: grid;
   gap: 44px;
+  width: min(100%, 795px);
+  margin: 0 auto;
 }
 
 .dress-section {
@@ -565,6 +588,12 @@ h3 {
   font-size: 14px;
 }
 
+.dress-panel > h2 {
+  width: min(100%, 795px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .section-intro,
 .centered-copy p {
   max-width: 620px;
@@ -582,6 +611,16 @@ h3 {
 .rich-copy p:last-child,
 .accordion-panel .rich-copy p:last-child {
   margin-bottom: 0;
+}
+
+.rich-list {
+  width: min(100%, 795px);
+  margin: 0 auto 28px;
+  padding-left: 24px;
+}
+
+.rich-list li + li {
+  margin-top: 14px;
 }
 
 .rich-copy a {
