@@ -12,8 +12,8 @@
   --hero-height: 124vh;
   --vines-height: 1448px;
   --font-body: "Lora", Georgia, "Times New Roman", Times, serif;
-  --font-heading: "Great Vibes", "Snell Roundhand", "Bickham Script Pro", "Segoe Script", "Brush Script MT", cursive;
-  --font-subheading: "PaytoneOne", "PaytoneOne", "Cormorant Garamond", Georgia, "Times New Roman", Times, serif;
+  --font-heading: "Great Vibes", cursive;
+  --font-subheading: "Melloida-ExtraBold", sans-serif;
 }
 
 @font-face {
@@ -25,18 +25,10 @@
 }
 
 @font-face {
-  font-family: "Carphe Regular";
-  src: local("Carphe Regular"), local("Carphe-Regular"), local("Carphe");
+  font-family: "Melloida-ExtraBold";
+  src: url("assets/fonts/Melloida-ExtraBold.ttf") format("truetype"), local("Melloida-ExtraBold");
   font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PaytoneOne";
-  src: local("PaytoneOne"), local("PaytoneOne");
-  font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-display: swap;
 }
 
