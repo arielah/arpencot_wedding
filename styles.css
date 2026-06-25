@@ -942,8 +942,9 @@ h3 {
   }
 
   .content-panel {
+    width: min(calc(100% - 68px), var(--content-width));
     min-height: calc(100vh - 112px);
-    padding: 78px 22px 56px;
+    padding: 72px 16px 52px;
   }
 
   .event-panel {
@@ -952,8 +953,9 @@ h3 {
   }
 
   .event-details {
+    width: min(calc(100% - 68px), var(--content-width));
     min-height: calc(100vh - 112px);
-    padding: 78px 22px 56px;
+    padding: 72px 16px 52px;
   }
 
   .story-panel {
@@ -974,18 +976,61 @@ h3 {
     gap: 30px;
   }
 
+  .eyebrow {
+    font-size: clamp(26px, 8vw, 38px);
+  }
+
   h2 {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
+    font-size: clamp(30px, 8.8vw, 40px);
+  }
+
+  h3 {
+    margin: 40px 0 10px;
+    font-size: 15px;
   }
 
   .story-copy,
+  .rich-copy,
   .section-intro,
   .centered-copy p {
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 1.52;
   }
 
   .welcome-copy {
+    font-size: 15px;
+    line-height: 1.64;
+  }
+
+  .rich-list,
+  .gallery figcaption,
+  .dress-gallery figcaption {
+    font-size: 14px;
+  }
+
+  .page-attribution {
+    font-size: 10px;
+  }
+
+  .event-card {
+    padding: 22px 18px;
+  }
+
+  .event-card .date {
+    font-size: 21px;
+  }
+
+  .event-card .place {
     font-size: 17px;
+  }
+
+  .date {
+    font-size: 24px;
+  }
+
+  .place {
+    font-size: 18px;
   }
 
   .event-grid {
@@ -1010,12 +1055,36 @@ h3 {
 }
 
 @media (max-width: 480px) {
+  .content-panel,
+  .event-details {
+    width: min(calc(100% - 52px), var(--content-width));
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  h2 {
+    font-size: clamp(28px, 10vw, 34px);
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  .story-copy,
+  .rich-copy,
+  .section-intro,
+  .centered-copy p,
+  .welcome-copy,
+  .rich-list {
+    font-size: 14px;
+  }
+
   .date {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .place {
-    font-size: 21px;
+    font-size: 17px;
   }
 
   .button-row {
@@ -1023,6 +1092,36 @@ h3 {
   }
 
   .event-card {
-    padding: 24px 20px;
+    padding: 20px 16px;
+  }
+
+  .event-card .date {
+    font-size: 19px;
+  }
+
+  .event-card .place {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 390px) {
+  .content-panel,
+  .event-details {
+    width: min(calc(100% - 60px), var(--content-width));
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .story-copy,
+  .rich-copy,
+  .section-intro,
+  .centered-copy p,
+  .welcome-copy,
+  .rich-list {
+    font-size: 13.5px;
+  }
+
+  .event-card {
+    padding: 18px 14px;
   }
 }
