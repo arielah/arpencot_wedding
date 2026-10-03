@@ -352,16 +352,24 @@ a {
 }
 
 .welcome-figure {
+  position: relative;
   width: min(100%, 760px);
+  aspect-ratio: 4 / 3;
   margin: 0 auto 28px;
+  overflow: hidden;
+  border: 1px solid rgba(135, 102, 95, 0.18);
+  box-shadow: 0 18px 32px rgba(113, 83, 63, 0.12);
 }
 
 .welcome-figure img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 115%;
+  max-width: none;
+  height: 100%;
   object-fit: cover;
-  border: 1px solid rgba(135, 102, 95, 0.18);
-  box-shadow: 0 18px 32px rgba(113, 83, 63, 0.12);
+  object-position: left 80%;
 }
 
 .event-grid {
@@ -405,7 +413,18 @@ a {
 }
 
 .event-card .date {
-  font-size: clamp(24px, 3vw, 31px);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: clamp(19px, 2.5vw, 28px);
+}
+
+.event-weekday {
+  font-size: 0.75em;
+}
+
+.event-calendar-date {
+  white-space: nowrap;
 }
 
 .event-card .place {
@@ -470,14 +489,11 @@ a {
 }
 
 #story::before,
-#story::after,
-#american-wedding::before,
-#american-wedding::after {
+#story::after {
   top: 128px;
 }
 
-#story,
-#american-wedding {
+#story {
   --side-art-position: left top;
 }
 
@@ -496,22 +512,6 @@ a {
 
 #gallery {
   --side-art-position: left top;
-}
-
-#american-wedding {
-  --side-art-image: url("assets/fern1.png");
-  --side-art-position: right top;
-  --side-art-repeat: no-repeat;
-  --side-art-size: auto 100%;
-}
-
-#american-wedding::before {
-  transform: scaleX(-1);
-  transform-origin: center;
-}
-
-#american-wedding::after {
-  transform: none;
 }
 
 .page-banner {
@@ -935,9 +935,7 @@ h3 {
   }
 
   #story::before,
-  #story::after,
-  #american-wedding::before,
-  #american-wedding::after {
+  #story::after {
     top: 112px;
   }
 
